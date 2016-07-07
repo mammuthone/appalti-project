@@ -1,0 +1,146 @@
+
+<ion-view view-title="Appalti">
+
+	<ion-content class="padding grey lighten-2" scroll="false" ng-controller="SplashCtrl" style="
+    background-color: #00589C!important;">
+		<div class="container" ng-class="rescont">
+			<div class="row padding" ng-class="class">
+	      		<div class="col s2">
+	      		</div>
+	      		<div class="col s8">
+	      			<div class="svg">
+				  		<img  ng-class="class" class="waves-effect waves-light responsive-img" src="./img/icon.png" />
+					</div>
+	      		</div>
+	      		<div class="col s2">
+	      		</div>
+	    	</div>
+			
+			<div class="row padding">
+				<!-- <div class="padding-vertical">
+					<img class="waves-effect waves-light responsive-img" src="./img/logopiselli.png" />
+				</div> -->
+			</div>
+		
+			<div class="row">
+				<!-- <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+				    <a class="btn-floating btn-large blue" ng-click="openFab()">
+				      <i class="large material-icons">mode_edit</i>
+				    </a>
+				    <ul>
+				      <li><a class="btn-floating red" ui-sref="login"><i class="material-icons">insert_chart</i></a></li>
+				      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+				      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+				      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+				    </ul>
+			  	</div> -->
+					<!-- <div class="col s12">
+						<h6 class="center-align flow-text">&nbsp;</h6>
+					</div> -->
+			</div>
+
+			<div class="row" >
+				<div class="col s12">
+					<h6 class="center-align flow-text">&nbsp;</h6>
+				</div>
+			</div>
+			<!-- <div class="row" >
+				
+				<div class="col s6 right-align">
+					<a class="waves-effect waves-light btn-large" ui-sref="login" ng-click="loader()">login</a>
+				</div>
+				<div class="col s6 left-align">
+					<a class="waves-effect waves-light btn-large" ui-sref="register">signup</a>
+				</div>
+				
+			</div> -->
+			<div class="row" id="form">
+				<ion-slide-box >
+
+					<ion-slide style="background-color: #00589C!important;">
+						<a class="waves-effect waves-light btn-large" ng-click="nextSlide()">login</a>
+					</ion-slide>
+
+					<ion-slide style=" background-color: #00589C!important;" >
+						<div  class="container" >
+					      <article>
+					        <section>
+					          <form>
+					            <input class="logininput white-text" type="text" placeholder="username" ng-model="user.username" ng-click="focus()"/>
+					            <input class="logininput white-text" type="password" placeholder="password" ng-model="user.password" />
+					            <button class="btn button button-full button-positive" ng-click="doLogin(user)" >
+					              LOGIN
+					            </button>
+					          </form>
+					        </section>
+					      </article>
+					    </div>
+						
+					</ion-slide>
+				</ion-slide-box>
+			</div>
+		</div>
+	
+	</ion-content>
+
+	<script id="templates/loading.html" type="text/ng-template">
+            
+            	 <ion-spinner class="light"></ion-spinner>
+            	<br />
+            	<span>Attendere, caricamento...</span> 
+        </script>
+        <style type="text/css">
+        	.svg {
+			  display: inline-block;
+			  height: 200px;
+			  width: 200px;
+			  line-height: 200px;
+			  text-align: center;
+			  background-color: #FFF;
+			  border-radius: 50%;
+			}
+
+form {
+      max-width:  $paragraph-width * 0.85;
+      margin:  0 auto;
+      background:  $white;
+      /*padding: 7.5rem 1rem 1rem;
+		margin-top:  3rem;
+      */
+      position:  relative;
+      
+  
+    a {
+     font-family:  $heavy;
+     color:  #242b31;
+     text-decoration:  none;
+     opacity:  0.45;
+    }
+  
+    h1 {
+     position:  absolute;
+      top:  0;
+      left:  0;
+      right:  0;
+      
+     background:  #242b31;
+     color:  #596774;
+     padding:  1.5rem;
+     text-transform:  uppercase;
+     font-size:  3rem;
+     border-top:  0.25rem solid #37bde0;
+    }
+}
+
+  .logininput {
+   width:  100%;
+   display:  block;
+   clear:  both;
+   text-align:  center;
+   padding:  0.75rem;
+   border-color:  $medgray;
+   margin-bottom:  1.5rem;
+   font-family:  $heavy;
+  }
+        </style>
+</ion-view>

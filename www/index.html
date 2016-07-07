@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src &apos;self&apos; https://fonts.googleapis.com &apos;unsafe-inline&apos;; script-src &apos;self&apos; &apos;unsafe-inline&apos; &apos;unsafe-eval&apos; *; font-src self *">
+
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="lib/slidingTabs/slidingTabs.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="lib/Materialize/dist/css/materialize.min.css" media="screen,projection">
+    <link href="https://fonts.googleapis.com/icon?family=Material%20Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="lib/angular-material/angular-material.css"> -->
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/angular-cookies/angular-cookies.min.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+    <script src="lib/ng-translate/ng-translate.js"></script>
+    <script src="lib/slidingTabs/slidingTabsDirective.js"></script>
+    <script src="lib/ngstorage/ngStorage.min.js"></script>
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/animejs/anime.min.js"></script>
+    <!-- <script src="lib/angular-aria/angular-aria.js"></script>
+    <script src="lib/angular-animate/angular-animate.js"></script> 
+    <script src="lib/angular-material/angular-material.js"></script> -->
+
+    <!--<script type="text/javascript" src="js/paypal-mobile-js-helper.js"></script>-->
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/config.js"></script>
+
+    <script src="js/paypal-mobile-js-helper.js"></script>
+
+    <script src="js/controllers.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/directives.js"></script>
+
+
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="lib/Materialize/dist/js/materialize.min.js"></script>
+
+  </head>
+
+  <body ng-csp="" ng-app="appalti">
+        <!-- <div id="deviceready" class="blink">
+            <p class="event listening">Connecting to Device</p>
+            <p class="event received">Device is Ready</p>
+            <button id="buyNowBtn" class="button button-positive"> Acquista !</button>
+            <select name="os0">
+                <option value="monthly">Abbonamento Mensile €4,99 EUR</option>
+                <option value="annual">Abbonamento Annuale €49,99 EUR</option>
+            </select>
+            <button id="buyInFutureBtn"> Pay in Future !</button>
+            <button id="profileSharingBtn"> Profile Sharing !</button>
+        </div> -->
+        <ion-nav-bar class="blue lighten-3">
+            <ion-nav-back-button>
+            </ion-nav-back-button>
+            
+        </ion-nav-bar>
+    <ion-nav-view>
+    </ion-nav-view>
+
+     <script id="splash.html" type="text/ng-template">
+      <ion-view view-title="Appalti">
+        <ion-content class="padding" scroll="false" ng-controller="SplashCtrl" >
+          <div id="splash-wrap">
+          <!--   <div id="logo">
+            </div> -->
+            <div class="buttons">
+              <a ui-sref="login">Log in</a>
+              <a ui-sref="signup">Sign up</a>
+            </div>
+          </div>
+      
+        </ion-content>
+        
+      </ion-pane>
+    </script>
+
+    <script id="login.html" type="text/ng-template">
+      <ion-view view-title="Log in" ng-controller="LoginCtrl">
+        <ion-content class="padding">
+          <form>
+            <div class="list">
+              <label class="item item-input">
+                <input type="email" placeholder="Email" ng-model="user.login">
+              </label>
+              <label class="item item-input">
+                <input type="password" placeholder="Password" ng-model="user.password">
+              </label>
+            </div>
+            <button class="button button-royal button-block">Log in</button>
+          </form>
+        </ion-content>
+      </ion-view>
+    </script>
+  </body>
+</html>

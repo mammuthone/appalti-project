@@ -1,0 +1,42 @@
+<div id="page">
+	<!-- HEADER con colore e TITOLO -->
+	<div ion-scroll="false" appalti-header></div>
+	<div class="item item-input-inset" style="border-style:none">
+    	<input type="text" placeholder="search..." ng-model="search">
+  		<a class="waves-effect waves-teal btn-flat" ng-click="searchKeyword()">search</a>
+  	</div>
+		
+	<ion-slide-box slide-tabs-scrollable="false"  show-pager="false" ion-slide-tabs>
+		<ion-slide ion-slide-tab-label="{{ 'TITLE' | translate }}">
+			<div appalti-risultati></div>
+		</ion-slide>
+		
+		<ion-slide  ion-slide-tab-label="{{'TWO' | translate }}">
+			<ion-content>
+				<div class="progress" ng-show="loadingAllElements">
+      				<div class="indeterminate"></div>
+  				</div>
+  				<div>
+	  				<ul class="collection" style="border-style:none;">
+    					<li ng-repeat="v in all">
+
+	      					<a class="collection-item" ui-sref="app.voce({id: v.node._ID })">
+	      						{{ v.node._TITLE }} 
+	      					</a>	
+
+	      				</li>
+      				</ul>
+	  				<!-- <ul class="collection" style="border-style:none; z-index: 2">
+	      				<li ng-repeat="v in all">
+
+	      					<a class="collection-item" ui-sref="app.voce({id: v.node._ID })">
+	      						{{ v.node._TITLE }} 
+	      					</a>	
+
+	      				</li>
+	  				</ul> -->
+  				</div>
+			</ion-content>
+		</ion-slide>	
+	</ion-slide-box>
+</div>

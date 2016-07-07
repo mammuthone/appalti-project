@@ -1,0 +1,28 @@
+<!--appalti.section.results.listelement.html-->
+<div class="container-fluid">
+	<div class="row" ng-repeat="item in voci">
+		<div class="col col-33" ui-sref="app.voce({id: item.node._ID })">
+			<svg width="70" height="70" viewBox="0 0 100 100">
+    			<g>
+    				<rect id="square" width="350" height="350" x="0" y="0" fill="{{ color[item.node._TYPE.toLowerCase()] }}"/>
+      				<text class="capolettera" x="50%" y="50%" font-size="50" fill="whitesmoke" alignment-baseline="middle" text-anchor="middle" font-family="Segoe UI"> 	{{ item.node._TYPE[0] }} 
+      				</text>
+      				<!-- <circle cx="25" cy="25" r="20"
+        				fill="rgba(128, 0, 128, 0.75)" 
+        				stroke="rgba(0, 255, 0, 0.25)" stroke-width="10"/> -->
+    			</g>
+  			</svg>
+		</div>
+		
+		<div class="col col-66">
+			<a ui-sref="app.voce({id: item.node._ID })" ng-click="" class="subdued">
+				{{ item.node._TITLE }}
+			</a>
+		</div>
+	</div>
+</div>
+<style type="text/css">
+	.capolettera{
+		font-weight: 100
+	}
+</style>

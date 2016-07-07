@@ -1,0 +1,19 @@
+<ion-content class="padding" scroll="true">
+    <div id="deviceready" class="padding blink">
+        <p class="event listening">Connecting to Device</p>
+        <p class="event received">Device is Ready</p>
+
+        <div class="metroblock buysblock left effect2" ng-repeat="sub in subscription" ng-click="paypalInit(sub.node)">
+            <span class="icon fa fa-paypal left"></span>
+             <h3 style="color: white">{{'€ '+ sub.node._PRICE }}</h3>
+            <div class="clear"></div>
+            <h6>{{ sub.node._TITLE }}</h6>
+        </div>
+    </div>
+</ion-content>
+
+<!--
+_TITLE: "Abbonamento Mensile (€ 49.95)",
+_PRICE: "49.95",
+_TYPE: "Mensile"
+-->

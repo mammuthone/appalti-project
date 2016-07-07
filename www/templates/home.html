@@ -1,0 +1,145 @@
+<ion-view view-title="Index" animation="slide-left-right">
+  <ion-content>
+   	<!-- <div class="card-panel teal lighten-2" style="margin: 0!important">
+  		<p class="flow-text right-align">
+	  		<i class="material-icons small">perm_identity</i>
+	  		{{ session.user }}
+	  	</p>
+  	</div> -->
+  	<div class="row">
+      <div class="col s12 m5">
+        <div class="card-panel teal">
+          <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+          </span>
+        </div>
+      </div>
+    </div>
+     
+
+	<div id="voci" class="metroblock buysblock left z-depth-2 face back" ui-sref="app.voci">
+	  <span class="icon fa fa-comments left"></span>
+	  <div class="clear"></div>
+	  <h4>Voci</h4>
+	</div>
+
+	<div id="normativa" class="metroblock buysblock left z-depth-3" ui-sref="app.normativa">
+	  <span class="icon fa fa-book left"></span>
+	  <div class="clear"></div>
+	  <h4>Normativa</h4>
+	</div>
+
+	<div id="giurisprudenza" class="metroblock commentsblock left clickable effect2 " ui-sref="app.giurisprudenza">
+	  <span class="icon fa fa-balance-scale left"></span>
+	  <div class="clear"></div>
+	  <h4>Giurisprudenza</h4>
+	</div>
+
+	<div id="anacsoftlaw" class="metroblock buysblock left effect2" ui-sref="app.anacsoftlaw">
+	  <span class="icon fa fa-gavel left"></span>
+	  <div class="clear"></div>
+	  <h4>Anac e Soft Law</h4>
+	</div>
+	<style type="text/css">
+	h4 {
+		color: whitesmoke;
+	}
+
+	#voci {
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+    	-webkit-tap-highlight-color: transparent;
+	}
+		
+	#normativa{
+		background-color: rgba(89,131,46, 1)!important;
+	}
+	
+	#giurisprudenza{
+		background-color: rgba(254,147,55,1)!important;
+	}
+
+	#anacsoftlaw{
+		background-color: rgba(147,170,226,1)!important;
+	}
+
+	.left {
+	  float: left;
+	}
+
+	.right {
+		float: right;
+	}
+
+	.clear {
+	clear: both;
+	}
+
+	.buysblock {
+	  background: rgb(38,168,226);
+	}
+	.commentsblock {
+	  background: rgb(39,183,121);
+	}
+	.paypalOk {
+	  background: rgb(39,183,121);
+	}
+
+	.paypalKo {
+		background : rgba(222, 27, 16, 0.68);;
+	}
+
+	.metroblock {
+	  width: 21em;
+	  padding: 0em 1em 1em 1em;
+	  color: #fff;
+	  font-family: 'Open Sans', sans-serif;
+	  margin: 1em;
+	}
+
+	.metroblock h3, .metroblock h4, .metroblock .icon {
+	  font-weight: 300;
+	  margin-top: .1em;
+	  padding: 0;
+	}
+	.metroblock h2, .metroblock .icon {
+	  font-size: 7em;
+	  text-align: center;
+	}
+	.metroblock .icon {
+	  margin-right: .2em;
+	}
+
+
+/*==============================================================*/
+.effect2
+{
+  position: relative;
+}
+.effect2:before, .effect2:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  box-shadow: 0 15px 10px #777;
+  transform: rotate(-3deg);
+}
+.effect2:after
+{
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+
+
+
+
+
+</style>
+  </ion-content>
+</ion-view>

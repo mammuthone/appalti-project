@@ -1,0 +1,36 @@
+{
+  "name": "animejs",
+  "description": "Polyvalent JavaScript animation engine",
+  "main": "anime.js",
+  "authors": [
+    "Julian Garnier <hello@julian.gr>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "anime",
+    "animation",
+    "javascript",
+    "CSS",
+    "transforms",
+    "SVG",
+    "canvas"
+  ],
+  "homepage": "http://anime-js.com/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "2aa7d52fb5",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "2aa7d52fb5d9ac83ec9f1fcd22929768b664e2bc"
+  },
+  "_source": "https://github.com/juliangarnier/anime.git",
+  "_target": "*",
+  "_originalSource": "animejs",
+  "_direct": true
+}
